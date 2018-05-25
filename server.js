@@ -1,9 +1,19 @@
 import Koa from 'koa'
+import mount from 'koa-mount'
+import views from 'koa-views'
 
-import { SERVER_PORT } from './env'
+import { SERVER_PORT, PROJECT_PATH } from './env'
 import playground from './db'
+import routes from './routes'
 
 export const app = new Koa()
+
+app.use(views(`${PROJECT_PATH}/views`, { extension: 'ect' }))
+
+Object.values(routes)
+  .forEach(route => {
+    app.use(mount(route))
+  })
 
 export const startServer = async () => {
   await playground.init()
