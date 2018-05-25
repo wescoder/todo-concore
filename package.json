@@ -1,0 +1,26 @@
+{
+  "name": "todo-concore",
+  "description": "Teste de aptidão para concore.io",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@github.com:wescoder/todo-concore.git",
+  "author": "Wésley Queiroz <wesley.coder@gmail.com> (https://github.com/wescoder)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "start": "pm2-dev start ecosystem.config.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.8.2",
+    "esm": "^3.0.37",
+    "pm2": "^2.10.4"
+  },
+  "dependencies": {
+    "concore-sdk-js": "^5.0.11",
+    "dotenv": "^5.0.1",
+    "koa": "^2.5.1",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.4.0"
+  }
+}
