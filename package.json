@@ -6,10 +6,11 @@
   "repository": "git@github.com:wescoder/todo-concore.git",
   "author": "Wésley Queiroz <wesley.coder@gmail.com> (https://github.com/wescoder)",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "lint": "eslint .",
     "opn": "opn http://todo-concore.lvh.me:4000 -- 'google-chrome' --user-data-dir=.tmp-chrome --remote-debugging-port=9230",
-    "server": "pm2-dev start ecosystem.config.js",
+    "server": "pm2-dev start config/ecosystem.config.js",
     "start": "run-p server opn"
   },
   "devDependencies": {

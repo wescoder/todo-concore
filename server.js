@@ -2,7 +2,7 @@ import Koa from 'koa'
 import mount from 'koa-mount'
 import views from 'koa-views'
 
-import { SERVER_PORT, PROJECT_PATH } from './env'
+import { SERVER_PORT, PROJECT_PATH } from './config/env'
 import playground from './db'
 import routes from './routes'
 

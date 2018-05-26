@@ -1,7 +1,7 @@
 import Auth from 'concore-sdk-js/lib/node/Datacore/Auth'
 import Concore from 'concore-sdk-js/lib/node'
 
-import { APP_ID, APP_KEY, CONCORE_ADMIN_USER, CONCORE_ADMIN_PASSWORD } from '../env'
+import { APP_ID, APP_KEY, CONCORE_ADMIN_USER, CONCORE_ADMIN_PASSWORD } from '../config/env'
 import models from '../models'
 
 export const init = async () => {
