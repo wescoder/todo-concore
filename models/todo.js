@@ -12,8 +12,8 @@ export const Todo = new Moleculoid('Todo', [
   new Text('description'),
   new BooleanType('done'),
   new DateTime('dueDate'),
-  new Reference('Owner', 'User', {
-    labelId: 'id',
+  new Reference('owner', 'User', {
+    labelId: 'name',
     multiple: false,
     required: true
   })
